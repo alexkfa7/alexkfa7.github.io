@@ -9,14 +9,21 @@
     </head>
     <body>
         <!-- The overlay (T.O.W.T)-->
-    <div id="overlay" class="overlay">
-        <div class="popup">
-            <h2>PRIVATE NEWSLETTER</h2>
-            <p>Please enter the access code you were given.</p>
-            <input type="password" id="password" placeholder="Enter Password">
-            <button id="submit" onclick="checkPassword()">Submit</button>
+        <div id="overlay" class="overlay">
+            <div class="popup">
+                <h2>PRIVATE NEWSLETTER</h2>
+                <p>Please enter the access code you were given.</p>
+                <input type="password" id="password" placeholder="Enter Password">
+                <button id="submit" onclick="checkPassword()">Submit</button>
+            </div>
         </div>
-    </div>
+        <div id="overlay2" class="overlay" style="display: none";>
+            <div class="popup">
+                <h2>SUBSCRIBE NOW</h2>
+                <p>The A.K Journal is not yet a member of your association.</p>
+                <button id="submit" onclick="removePopUp()">Request Info</button>
+            </div>
+        </div>
         <div class="content">
         <div class="blog">
             <div class="blog-part is-menu">
@@ -58,7 +65,7 @@
                <p>
                 Almost five years have passed since A.K left his first business in the US. His journey in Asia led to unique opportunities and a need to revisit his roots.
                </p>
-               <a href="#">
+               <a href="#" onclick="subscribeArticle()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
                  <path d="M15 10l5 5-5 5" />
                  <path d="M4 4v7a4 4 0 004 4h12" />
@@ -82,7 +89,7 @@
                <p>
                 A modern day 'Sidney Weinberg', H.E Ambassador Sulistiyanto takes big steps into his new role as presidential advisor of ASEAN leader Joko Widodo.
                </p>
-               <a href="#">
+               <a href="#" onclick="subscribeArticle()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
                  <path d="M15 10l5 5-5 5" />
                  <path d="M4 4v7a4 4 0 004 4h12" />
@@ -106,7 +113,7 @@
                <p>
                 Korea's rigid and bureaucratic military industry never crossed paths with Korea's global K-Pop & K-Drama phenomenon, that was until Il-Gwang Group called for backup.
                </p>
-               <a href="#">
+               <a href="#" onclick="subscribeArticle()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-down-right" viewBox="0 0 24 24">
                  <path d="M15 10l5 5-5 5" />
                  <path d="M4 4v7a4 4 0 004 4h12" />
@@ -132,7 +139,7 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">1</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.21.2023</div>
                </div>
                <div class="blog-right-page-title">Blonde - Widespread Acclaim</div>
                <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
@@ -140,7 +147,7 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">2</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.18.2023</div>
                </div>
                <div class="blog-right-page-title">Introspective Lyrics and Beats</div>
                <div class="blog-right-page-subtitle">When we toured Scotland we stopped at several selft-sealing hpuses because hotels would</div>
@@ -148,7 +155,7 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">3</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.18.2023</div>
                </div>
                <div class="blog-right-page-title">The Language Of Gris: Comples Beauty Of Monochrome</div>
                <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
@@ -156,7 +163,7 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">4</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.16.2023</div>
                </div>
                <div class="blog-right-page-title">A24 IS LAUNCHING ITS OWN BEAUTY BRAND</div>
                <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
@@ -164,7 +171,7 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">5</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.19.2023</div>
                </div>
                <div class="blog-right-page-title">Elon Musk's SpaceX is launching a moon satellite</div>
                <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
@@ -172,15 +179,17 @@
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">6</div>
-                <div class="date">12.06.2021</div>
+                <div class="date">11.05.2023</div>
                </div>
                <div class="blog-right-page-title">What Happens When You Leave Your Old life Behind</div>
                <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
               </div>
               <div class="circle">
-               <div class="circle-title">Leave Your Old Life Behind</div>
-               <div class="circle-subtitle">Don't try to be like someone else, be yourself. Be secure with yourself.</div>
-               <div class="circle-footer">Explore</div>
+               <div class="circle-title">Be Happy When There's Work To Be Done</div>
+               <div class="circle-subtitle">
+                As described of S.W from an observer from PS.13. "He is happy when he is busy."
+               </div>
+               <div class="circle-footer">Quote of the Day</div>
               </div>
              </div>
             </div>
@@ -221,6 +230,17 @@
                     alert("Incorrect access code. Please request permission for access.");
                 }
             }
+
+            //function for popup
+            function subscribeArticle() {
+                document.getElementById("overlay2").style.display = "block"
+            }
+
+            function removePopUp() {
+                document.getElementById("overlay2").style.display = "none";
+                window.location.href = "mailto:alexkfa7@gmail.com" + "?subject=" + encodeURIComponent("[*A.K Journal Inquiry*]") + "&body=Hello A.K," + "\n" + " We are interested in learning more and moving forward in having you join as a member of our association. Attached below is some relevant information."
+            }
+
         </script>
     </body>
 </html>
