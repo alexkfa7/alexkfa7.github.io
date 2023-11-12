@@ -9,14 +9,14 @@
     </head>
     <body>
         <!-- The overlay (T.O.W.T)-->
-        <div id="overlay" class="overlay">
+        <!-- <div id="overlay" class="overlay">
             <div class="popup">
                 <h2>PRIVATE NEWSLETTER</h2>
                 <p>Please enter the access code you were given.</p>
                 <input type="password" id="password" placeholder="Enter Password">
                 <button id="submit" onclick="checkPassword()">Submit</button>
             </div>
-        </div>
+        </div> -->
         <div id="overlay2" class="overlay" style="display: none";>
             <div class="popup">
                 <h2>SUBSCRIBE NOW</h2>
@@ -24,21 +24,27 @@
                 <button id="submit" onclick="removePopUp()">Request Info</button>
             </div>
         </div>
+        <div id="overlay3" class="overlay" style="display: none";>
+            <div class="popup">
+                <h2>Feature Not Yet Available</h2>
+                <button id="submit" onclick="removePopUp2()">Return</button>
+            </div>
+        </div>
         <div class="content">
         <div class="blog">
             <div class="blog-part is-menu">
-             <a href="#" class="blog-menu">
+             <a href="#" class="blog-menu" onclick="nyaFeature()">
               About 
               <!-- <small><i>(N/A)</i></small> -->
               <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
                <path d="M7 17L17 7M7 7h10v10" />
               </svg>
              </a>
-             <a href="#" class="blog-menu">Markets</a>
-             <a href="#" class="blog-menu">Industries</a>
-             <a href="#" class="blog-menu">Contact</a>
-             <a href="#" class="blog-menu mention">@asim_ssi</a>
-             <a href="#" class="blog-menu subscribe"><small>Subscribe Data</small></a>
+             <a href="#" class="blog-menu" onclick="nyaFeature()">Markets</a>
+             <a href="#" class="blog-menu" onclick="nyaFeature()">Industries</a>
+             <a href="mailto: alexkfa7@gmail.com" class="blog-menu">Contact</a>
+             <a href="https://www.instagram.com/asim_ssi/" class="blog-menu mention">@asim_ssi</a>
+             <a href="#" class="blog-menu subscribe" onclick="nyaFeature()"><small>Subscribe Data</small></a>
             </div>
             <div class="blog-header blog-is-sticky">
              <div class="blog-article header-article">
@@ -57,7 +63,7 @@
               </div>
               <div class="blog-article">
                <img src="images/nyc.png" alt="">
-               <h2>Great <span>Determination</span> For The Return to The Homeland</h2>
+               <h2>Great <span>Determination</span> In The Return to Homeland</h2>
                <div class="blog-detail">
                 <span>By A.K Alex</span>
                 <span>7 Min Read</span>
@@ -125,15 +131,15 @@
             </div>
             <div class="blog-part right-blog">
              <marquee width="100%" direction="left">
-              <span>A.K Begins Journey into Finance & Banking</span>
+              <span>A.K Journeys into Finance & Banking</span>
               <span>PT AO Komodo Launches First Hangover Product in Jakarta</span>
-              <span>ASMLA is Acquired Below Market Price</span>
+              <span>ASMLA Shares Acquired Below Market Price</span>
              </marquee>
              <div class="blog-right-title-container">
               <div class="blog-right-title">
                Featured Articles
               </div>
-              <div class="blog-menu rounded">See All</div>
+              <div class="blog-menu rounded" onclick="subscribeArticle()">See All</div>
              </div>
              <div class="blog-right">
               <div class="blog-right-container">
@@ -141,48 +147,48 @@
                 <div class="blog-right-page">1</div>
                 <div class="date">11.21.2023</div>
                </div>
-               <div class="blog-right-page-title">Blonde - Widespread Acclaim</div>
-               <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+               <div class="blog-right-page-title">The Battery War - Korea, China, and Indonesia</div>
+               <div class="blog-right-page-subtitle">China and Korea seek dominance in the global supply chain through investments in Indonesia's rare metals</div>
               </div>
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">2</div>
                 <div class="date">11.18.2023</div>
                </div>
-               <div class="blog-right-page-title">Introspective Lyrics and Beats</div>
-               <div class="blog-right-page-subtitle">When we toured Scotland we stopped at several selft-sealing hpuses because hotels would</div>
+               <div class="blog-right-page-title">First Lady Keon-Hee to speak at Jakarta K-Film Delegation</div>
+               <div class="blog-right-page-subtitle">Multinational production house, Studio Artemis, to hold Korea Indonesia film delegation event in March 2024</div>
               </div>
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">3</div>
                 <div class="date">11.18.2023</div>
                </div>
-               <div class="blog-right-page-title">The Language Of Gris: Comples Beauty Of Monochrome</div>
-               <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+               <div class="blog-right-page-title">Indonesia Promises New Payment Plan in KF-21 Co-Development Deal</div>
+               <div class="blog-right-page-subtitle">Indonesia's cost share burden is about US $2B out of the total $8B of development costs in the F-22 Raptor copycat</div>
               </div>
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">4</div>
                 <div class="date">11.16.2023</div>
                </div>
-               <div class="blog-right-page-title">A24 IS LAUNCHING ITS OWN BEAUTY BRAND</div>
-               <div class="blog-right-page-subtitle">Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's</div>
+               <div class="blog-right-page-title">PT AO Komodo Takes on Asia's Next Greatest Entertainment Market</div>
+               <div class="blog-right-page-subtitle">Buyer interest is skyrocketing for AOK's FDA-pending hangover jelly in Indonesia despite being a muslim majority state</div>
               </div>
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">5</div>
                 <div class="date">11.19.2023</div>
                </div>
-               <div class="blog-right-page-title">Elon Musk's SpaceX is launching a moon satellite</div>
-               <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+               <div class="blog-right-page-title">Asimula Debuts Korea's Largest Virtual Event at 32,000 Live Viewers</div>
+               <div class="blog-right-page-subtitle">Asimula in partnership with Ministry of Culture & Tourism launch the largest virtual live event of its time with K-Pop artists</div>
               </div>
               <div class="blog-right-container">
                <div class="blog-title-date">
                 <div class="blog-right-page">6</div>
                 <div class="date">11.05.2023</div>
                </div>
-               <div class="blog-right-page-title">What Happens When You Leave Your Old life Behind</div>
-               <div class="blog-right-page-subtitle">The interior concept was conceived of by Dutch archtitect Studio Anne Holtrop who cleverly emulated</div>
+               <div class="blog-right-page-title">Polish Arm of SRT Energy Develops EU's Biggest ESS Plant With KEPCO</div>
+               <div class="blog-right-page-subtitle">SRT Energy shake hands with Korea Electric Power Corporation to take part in EU's largest Energy Storage Plant</div>
               </div>
               <div class="circle">
                <div class="circle-title">Be Happy When There's Work To Be Done</div>
@@ -233,12 +239,20 @@
 
             //function for popup
             function subscribeArticle() {
-                document.getElementById("overlay2").style.display = "block"
+                document.getElementById("overlay2").style.display = "block";
             }
 
             function removePopUp() {
                 document.getElementById("overlay2").style.display = "none";
-                window.location.href = "mailto:alexkfa7@gmail.com" + "?subject=" + encodeURIComponent("[*A.K Journal Inquiry*]") + "&body=Hello A.K," + "\n" + " We are interested in learning more and moving forward in having you join as a member of our association. Attached below is some relevant information."
+                window.location.href = "mailto:alexkfa7@gmail.com" + "?subject=" + encodeURIComponent("[*A.K Journal Inquiry*]") + "&body=Hello A.K," + "\n" + " We are interested in learning more and moving forward in having you join as a member of our association. Attached below is some relevant information.";
+            }
+
+            function nyaFeature() {
+                document.getElementById("overlay3").style.display = "block";
+            }
+
+            function removePopUp2() {
+                document.getElementById("overlay3").style.display = "none";
             }
 
         </script>
