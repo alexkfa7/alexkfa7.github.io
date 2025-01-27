@@ -1,0 +1,60 @@
+/* Glitch Effect with Pause */
+@keyframes glitch {
+  0%, 90% { /* Pause for 90% of the duration */
+    text-shadow: none;
+    transform: none;
+  }
+  91%, 95% {
+    text-shadow: -2px 0px #ff00ff, 2px 0px #00ffff;
+  }
+  96%, 100% {
+    text-shadow: 1px 0px #ff00ff, -1px 0px #00ffff;
+    transform: translateY(0);
+  }
+}
+
+/* Streak Effect with Pause */
+@keyframes streak {
+  0%, 90% { /* Pause for 90% of the duration */
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+  40%, 45% {
+    clip-path: inset(20% 0 40% 0); /* Cuts out a middle section */
+    transform: translateX(-10px); /* Shift the bottom half */
+  }
+  46%, 50% {
+    clip-path: inset(0 0 40% 0); /* Cuts out the top section */
+    transform: translateX(10px); /* Shift the top half */
+  }
+}
+
+/* Apply these animations to the glitch-text class */
+.glitch-text {
+  position: relative;
+  animation: glitch 4s infinite steps(1, start), streak 4s infinite steps(1, start);
+  filter: blur(1.5px);
+}
+
+
+/* Glitch Effect with Pause for Logo */
+@keyframes logo-glitch {
+  0%, 90% { /* Pause for 90% of the duration */
+    filter: none;
+    transform: none;
+  }
+  91%, 95% {
+    filter: drop-shadow(-2px 0px 2px #ff00ff) drop-shadow(2px 0px 2px #00ffff);
+    transform: translateX(-2px) translateY(-1px) skewX(-5deg);
+  }
+  96%, 100% {
+    filter: drop-shadow(1px 0px 1px #ff00ff) drop-shadow(-1px 0px 1px #00ffff);
+    transform: translateX(2px) translateY(1px) skewX(5deg);
+  }
+}
+
+.glitch-logo {
+  animation: logo-glitch 4s infinite steps(1, start);
+  filter: blur(1.5px);
+}
+

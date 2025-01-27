@@ -1,47 +1,33 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './styles/App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import LandingPage from './components/LandingPage';
+import AboutPage from './components/AboutPage';
+import PrivateBlog from './components/PrivateBlog';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import SecretPage from './components/Secret';
+import GlobalStyle from './styles/GlobalStyle';
 
-const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
+function App() {
   return (
     <Router>
-      <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-        <nav className="navbar">
-          <div className="nav-logo">
-            <Link to="/">A.K WEB</Link>
-          </div>
-          <ul className="nav-links">
-            <li>
-              <Link to="/about">ABOUT</Link>
-            </li>
-            <li>
-              <Link to="/projects">PROJECTS</Link>
-            </li>
-            <li>
-              <Link to="/blogs">BLOGs</Link>
-            </li>
-          </ul>
-          <button onClick={toggleDarkMode} className="toggle-mode">
-            Toggle {darkMode ? 'Light' : 'Dark'} Mode
-          </button>
-        </nav>
-        <main>
-          <Routes>
-            <Route path="/" element={<h1>A.K WEB</h1>} />
-            <Route path="/about" element={<h2>About Page</h2>} />
-            <Route path="/projects" element={<h2>Projects Page</h2>} />
-            <Route path="/blogs" element={<h2>Blogs Page</h2>} />
-          </Routes>
-        </main>
+      <GlobalStyle />
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/private-blog" component={PrivateBlog} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/secret" component={SecretPage} />
+        </Switch>
+        <Footer />
       </div>
     </Router>
   );
-};
+}
 
 export default App;
