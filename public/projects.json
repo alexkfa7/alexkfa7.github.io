@@ -1,0 +1,103 @@
+[
+    {
+      "title": "Qualcomm - AI Emotion Recognition Through Audio & Video",
+      "subtitle": "Using non-traditional computer vision analysis of voice recordings to identify emotion in video",
+      "description": "We were invited by Qualcomm to participate in a hackathon challenge where we had to identify the perceived emotion by using a combination of audio and video files provided",
+      "image": "/images/project1.jpg",
+      "date": "Jan 2024",
+      "collaborators": ["John Doe", "Jane Smith"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project1-detail.jpg",
+          "description": "The AI engine analyzing legalfaj lkdjflka jdlkfj akl;d jflkadjlk; fjalk;sdj ;fka d text."
+        },
+        {
+          "type": "image",
+          "url": "/images/project1-detail.jpg",
+          "description": "Dashboard interface of the system test this fuckin shit if it works does it work i dont know."
+        }
+      ]
+    },
+    {
+      "title": "Crypto Payment System",
+      "subtitle": "A seamless and fast crypto-based payment gateway",
+      "description": "A revolutionary cryptocurrency payment gateway that allows users to seamlessly transact across different blockchain networks.",
+      "image": "/images/project2.jpg",
+      "date": "Dec 2023",
+      "collaborators": ["Alice Johnson"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project2-detail1.jpg",
+          "description": "Real-time transactions overview."
+        },
+        {
+          "type": "image",
+          "url": "/images/project2-detail2.jpg",
+          "description": "Crypto wallet integration."
+        }
+      ]
+    },
+    {
+      "title": "VR Education Platform",
+      "subtitle": "A new way to learn using virtual reality",
+      "description": "We built an interactive VR learning experience tailored for remote students.",
+      "image": "/images/project3.jpg",
+      "date": "Nov 2023",
+      "collaborators": ["Emily Brown"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project3-detail1.jpg",
+          "description": "VR learning module demo."
+        }
+      ]
+    },
+    {
+      "title": "AI-Powered Music Generator",
+      "subtitle": "AI that composes and produces music",
+      "description": "This AI model creates original compositions based on user input.",
+      "image": "/images/project4.jpg",
+      "date": "Oct 2023",
+      "collaborators": ["Michael Green", "Sarah Lee"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project4-detail1.jpg",
+          "description": "AI music waveform analysis."
+        }
+      ]
+    },
+    {
+      "title": "Automated Trading Bot",
+      "subtitle": "Crypto & stock trading bot",
+      "description": "Built an AI-driven trading bot for high-frequency trading on crypto markets.",
+      "image": "/images/project5.jpg",
+      "date": "Sept 2023",
+      "collaborators": ["James Miller"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project5-detail1.jpg",
+          "description": "Live trading session screenshot."
+        }
+      ]
+    },
+    {
+      "title": "IoT Home Automation",
+      "subtitle": "A smart home system controlled via AI",
+      "description": "Integrated AI-powered smart home automation to manage lighting, security, and appliances.",
+      "image": "/images/project6.jpg",
+      "date": "Aug 2023",
+      "collaborators": ["Sophia Turner"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project1-detail.jpg",
+          "description": "IoT home control dashboard."
+        }
+      ]
+    }
+  ]
+  

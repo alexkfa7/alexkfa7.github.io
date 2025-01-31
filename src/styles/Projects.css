@@ -1,0 +1,149 @@
+/* Projects Page Wrapper */
+.projects-wrapper {
+    padding: 50px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    background: #1A1A1A; /* Slightly lighter than black */
+    box-shadow: 0px 8px 16px rgba(50, 50, 50, 0.6); /* Subtle shadow for 3D effect */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    height: 150px; /* Reduced height */
+  }
+  
+  /* Project Image (Left Column) */
+  .project-image {
+    width: 120px;
+    height: 120px; /* Reduced size */
+    object-fit: cover;
+    padding: 10px;
+  }
+  
+  /* Project Header */
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Title and Metadata */
+  .project-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    flex: 1;
+    word-wrap: break-word; /* Wraps text to prevent overlap */
+  }
+  
+  .project-metadata {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 10px;
+  }
+  
+  .project-date {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .project-collaborators {
+    font-size: 12px;
+    color: #aaa;
+    margin: 0;
+  }
+  
+  /* Media Container - Now in Horizontal Row */
+  .media-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .media-item {
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .project-media {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .media-description {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content img {
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 5px;
+  }
+  
+  .modal-description {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .close-btn:hover {
+    background: red;
+    color: white;
+  }
+  

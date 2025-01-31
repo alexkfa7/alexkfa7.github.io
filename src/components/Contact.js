@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Form.css';
 
 const ApplicationWrapper = styled.div`
-  padding: 50px 0;
+  padding: 30px;
+  max-width: 100%;
 `;
 
 const LogoLink = styled(Link)`
@@ -14,24 +15,33 @@ const LogoLink = styled(Link)`
   }
 `;
 
+const FormContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px; /* Space before the footer */
+`;
+
+const IframeStyled = styled.iframe`
+  width: 95%; /* Expands form width with slight left/right margin */
+  max-width: 1200px; /* Prevents excessive stretching on large screens */
+  height: 80vh; /* Dynamic height */
+  border: none;
+`;
+
 const Contact = () => (
   <ApplicationWrapper>
-    <h1>Contact Me</h1>
-    <p> Send me a message using the form below:</p>
-    {/* Add application form here */}
-    <div>
-      <div className="form-container">
-        <iframe
-          src="https://forms.gle/8VS8J55hi3P4gA748" // google form URL
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          title="Google Form"
-        >
-          Loading…
-        </iframe>
-      </div>
-    </div>
+    <h1>/Contact Me</h1>
+    <p>Send me a message using the form below:</p>
+    <FormContainer>
+      <IframeStyled
+        src="https://forms.gle/nhMjKYL2TVXCZX6q8" // Google Form URL
+        title="Contact Form"
+      >
+        Loading…
+      </IframeStyled>
+    </FormContainer>
   </ApplicationWrapper>
 );
 

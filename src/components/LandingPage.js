@@ -132,8 +132,8 @@ const LandingPage = () => {
       </Title>
       <Subtitle>Alex Kemas's personal website</Subtitle>
       <ButtonContainer>
-        <CTAButton to="/about">Read More..</CTAButton>
-        <CTAButton to="/contact">or Send Me A Message</CTAButton>
+        <CTAButton to="/about">About A.K.</CTAButton>
+        <CTAButton to="/contact">Send Me A Message</CTAButton>
       </ButtonContainer>
     </Hero>
   );

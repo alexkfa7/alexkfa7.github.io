@@ -38,8 +38,8 @@ const Header = () => (
     </LogoLink>
     <Nav>
       <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/private-blog">Blogs</Link>
+      <Link to="/projects">Dev</Link>
+      <Link to="/private-blog">Blog</Link>
       <Link to="/contact">Contact Me</Link>
     </Nav>
   </HeaderWrapper>

@@ -17,13 +17,6 @@ const Input = styled.input`
   font-family: 'vcr-font', sans-serif;
 `;
 
-const LogoLink = styled(Link)`
-  color: #39FF14;
-  &:active {
-    color: #FF0000; /* Color when the link is clicked */
-  }
-`;
-
 const Button = styled.button`
   background-color: #ffffff;
   color: #0a0a0a;
@@ -63,8 +56,8 @@ const PrivateBlog = () => {
   };
 
   return (
-    <div>
-      <h1>Private Blog</h1>
+    <div style={{ padding: '30px' }}>
+      <h1>/Private Blog & Essays</h1>
       <p>Access to my my private blog is limited to referred persons only. You can request access by sending me a message, or you can check out my public blog written under the pesudonym: <a
       href="https://medium.com/@karlasimov"
       style={{
@@ -84,6 +77,9 @@ const PrivateBlog = () => {
         <Button type="submit">Submit</Button>
       </Form>
       {message && <p>{message}</p>}
+
+      <h2 style={{paddingTop: '200px'}}>Check out some of my essays below:</h2>
+      <h3>**apologies, this section is currently being updated..**</h3>
     </div>
   );
 };
