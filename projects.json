@@ -1,0 +1,103 @@
+[
+    {
+      "title": "Qualcomm - AI Emotion Recognition Through Audio & Video",
+      "subtitle": "Using non-traditional computer vision analysis of voice recordings to identify emotion in video",
+      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using a combination of audio and video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data. The audio data however was quite consistent, so I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. I've done a lot of crazy things in my life, but despite this being only a small side project it was one of my most proudest achievements. Btw, all of the data was in Korean when I didn't speak Korean at the time hehe.",
+      "image": "/images/project1.jpg",
+      "date": "Dec 2019",
+      "collaborators": ["Daehyeon Nam", "Mina Kim"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project1-detail1.png",
+          "description": "An example image generated after performing normalization functions of the audio data when visualized into an image"
+        },
+        {
+          "type": "image",
+          "url": "/images/project1-detail.jpg",
+          "description": "Dtest test test"
+        }
+      ]
+    },
+    {
+      "title": "Crypto Payment System",
+      "subtitle": "A seamless and fast crypto-based payment gateway",
+      "description": "A revolutionary cryptocurrency payment gateway that allows users to seamlessly transact across different blockchain networks.",
+      "image": "/images/project2.jpg",
+      "date": "Dec 2023",
+      "collaborators": ["Alice Johnson"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project2-detail1.jpg",
+          "description": "Real-time transactions overview."
+        },
+        {
+          "type": "image",
+          "url": "/images/project2-detail2.jpg",
+          "description": "Crypto wallet integration."
+        }
+      ]
+    },
+    {
+      "title": "VR Education Platform",
+      "subtitle": "A new way to learn using virtual reality",
+      "description": "We built an interactive VR learning experience tailored for remote students.",
+      "image": "/images/project3.jpg",
+      "date": "Nov 2023",
+      "collaborators": ["Emily Brown"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project3-detail1.jpg",
+          "description": "VR learning module demo."
+        }
+      ]
+    },
+    {
+      "title": "AI-Powered Music Generator",
+      "subtitle": "AI that composes and produces music",
+      "description": "This AI model creates original compositions based on user input.",
+      "image": "/images/project4.jpg",
+      "date": "Oct 2023",
+      "collaborators": ["Michael Green", "Sarah Lee"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project4-detail1.jpg",
+          "description": "AI music waveform analysis."
+        }
+      ]
+    },
+    {
+      "title": "Automated Trading Bot",
+      "subtitle": "Crypto & stock trading bot",
+      "description": "Built an AI-driven trading bot for high-frequency trading on crypto markets.",
+      "image": "/images/project5.jpg",
+      "date": "Sept 2023",
+      "collaborators": ["James Miller"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project5-detail1.jpg",
+          "description": "Live trading session screenshot."
+        }
+      ]
+    },
+    {
+      "title": "IoT Home Automation",
+      "subtitle": "A smart home system controlled via AI",
+      "description": "Integrated AI-powered smart home automation to manage lighting, security, and appliances.",
+      "image": "/images/project6.jpg",
+      "date": "Aug 2023",
+      "collaborators": ["Sophia Turner"],
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project1-detail.jpg",
+          "description": "IoT home control dashboard."
+        }
+      ]
+    }
+  ]
+  
