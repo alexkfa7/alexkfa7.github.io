@@ -2,20 +2,20 @@
     {
       "title": "Qualcomm - AI Emotion Recognition Through Audio & Video",
       "subtitle": "Using non-traditional computer vision analysis of voice recordings to identify emotion in video",
-      "description": "We were invited by Qualcomm to participate in a hackathon challenge where we had to identify the perceived emotion by using a combination of audio and video files provided",
+      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using a combination of audio and video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data. The audio data however was quite consistent, so I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. I've done a lot of crazy things in my life, but despite this being only a small side project it was one of my most proudest achievements. Btw, all of the data was in Korean when I didn't speak Korean at the time hehe.",
       "image": "/images/project1.jpg",
-      "date": "Jan 2024",
-      "collaborators": ["John Doe", "Jane Smith"],
+      "date": "Dec 2019",
+      "collaborators": ["Daehyeon Nam", "Mina Kim"],
       "media": [
         {
           "type": "image",
-          "url": "/images/project1-detail.jpg",
-          "description": "The AI engine analyzing legalfaj lkdjflka jdlkfj akl;d jflkadjlk; fjalk;sdj ;fka d text."
+          "url": "/images/project1-detail1.png",
+          "description": "An example image generated after performing normalization functions of the audio data when visualized into an image"
         },
         {
           "type": "image",
           "url": "/images/project1-detail.jpg",
-          "description": "Dashboard interface of the system test this fuckin shit if it works does it work i dont know."
+          "description": "Dtest test test"
         }
       ]
     },

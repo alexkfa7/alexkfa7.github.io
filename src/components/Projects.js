@@ -8,13 +8,13 @@ const Projects = () => {
 
   useEffect(() => {
     fetch('/projects.json')
-      .then(response => response.json())
-      .then(data => setProjects(data))
-      .catch(error => console.error('Error loading projects:', error));
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error('Error loading projects:', error));
   }, []);
 
   const toggleReadMore = (index) => {
-    setExpandedCards(prev => ({ ...prev, [index]: !prev[index] }));
+    setExpandedCards((prev) => ({ ...prev, [index]: !prev[index] }));
   };
 
   const openModal = (imageUrl, description) => {
@@ -27,13 +27,15 @@ const Projects = () => {
 
   return (
     <div className="projects-wrapper">
-      <h1>Projects</h1>
-      <p>Compiled below in non-sequential order are various open-source and private projects I've worked on.</p>
+      <h1>/DEV Projects</h1>
+      <p>Below is a collection of open-source and private projects I've worked on.</p>
 
       {projects.map((project, index) => (
-        <div className="project-card" key={index}>
+        <div className={`project-card ${expandedCards[index] ? 'expanded-card' : ''}`} key={index}>
           {/* Left Column - Project Cover Image */}
-          <img className="project-image" src={project.image} alt={project.title} />
+          <div className="project-image-wrapper" onClick={() => openModal(project.image, project.title)}>
+            <img className="project-image" src={project.image} alt={project.title} />
+          </div>
 
           {/* Right Column - Content */}
           <div className="project-content">
@@ -52,22 +54,27 @@ const Projects = () => {
               <p className={`project-description ${expandedCards[index] ? 'expanded' : ''}`}>
                 {project.description}
               </p>
-              <button className="read-more-btn" onClick={() => toggleReadMore(index)}>
-                {expandedCards[index] ? "Read Less" : "Read More"}
-              </button>
             </div>
 
-            {/* Media - Display in Horizontal Row Below Description */}
+            {/* Media Section and Read More */}
             {expandedCards[index] && project.media && (
               <div className="media-container">
                 {project.media.map((media, i) => (
                   <div key={i} className="media-item">
-                    <img className="project-media" src={media.url} alt="Project media" onClick={() => openModal(media.url, media.description)} />
+                    <img
+                      className="project-media"
+                      src={media.url}
+                      alt="Project media"
+                      onClick={() => openModal(media.url, media.description)}
+                    />
                     <p className="media-description">{media.description}</p>
                   </div>
                 ))}
               </div>
             )}
+            <button className="read-more-btn" onClick={() => toggleReadMore(index)}>
+              {expandedCards[index] ? '...Read Less' : 'Read More...'}
+            </button>
           </div>
         </div>
       ))}
@@ -75,10 +82,12 @@ const Projects = () => {
       {/* Modal for Enlarged Image */}
       {modalData && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img src={modalData.imageUrl} alt="Expanded view" />
             <p className="modal-description">{modalData.description}</p>
-            <button className="close-btn" onClick={closeModal}>X</button>
+            <button className="close-btn" onClick={closeModal}>
+              X
+            </button>
           </div>
         </div>
       )}
