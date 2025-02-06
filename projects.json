@@ -2,7 +2,7 @@
     {
       "title": "QUALCOMM - AI Emotion Recognition Through Audio & Video",
       "subtitle": "Using computer vision analysis of voice recordings to identify emotion in video",
-      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using the video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data and I simply did not have the time nor compute to handle the large discrepencies. The audio data however was quite consistent and much less computationally taxing. After a few attempts of using the raw audio data, I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. The basic idea was to generate DFT normalized spectograms on smaller plots of an audio file to extract their features. I saw the budget for some of the other teams, and during the award ceremony everyone was so shocked that I could run the live-demo locally on my laptop haha. Looking back, I think one advantage I may have had was that I couldn't speak or understand Korean at the time which may have helped in being unbiased to the perceived emotions.",
+      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using the video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data and I simply did not have the time nor compute to handle the large discrepencies. The audio data however was quite consistent and much less computationally taxing. After a few attempts of using the raw audio data, I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. The basic idea was to generate DFT normalized spectograms on smaller plots of an audio file to extract their features. I saw the budget for some of the other teams, and during the award ceremony everyone was so shocked that we could run the live-demo locally on my laptop haha. Looking back, I think one advantage I may have had was that I couldn't speak or understand Korean at the time which may have helped in being unbiased to the perceived emotions.",
       "image": "/images/project1.jpg",
       "date": "Dec 2019",
       "collaborators": ["Daehyeon Nam", "Mina Kim"],
@@ -22,8 +22,8 @@
     },
     {
       "title": "Crypto Free Lunch Program - Digital Ledger Service for Eliminating Corruption in Indonesia's proposed 'Free Lunch Program'",
-      "subtitle": "Indonesia is one of the most corrupt countries, with many notable mentions from the ICIJ",
-      "description": "A revolutionary cryptocurrency payment gateway that allows users to seamlessly verify and account for supply chain and purchase.",
+      "subtitle": "Indonesia is known as one of the most corrupt countries in the world with many notable mentions from the ICIJ",
+      "description": "Acting President Prabowo Subianto and Vice President Gibran Rakabuming promised a vision where no student goes hungry as one of the key foundations of their presidential campaign prior to victory. Recently the program has slowly rolled out, but corruption runs rampant throughout the country and greatly manifests itself in large budget initiatives as such. I could talk about corruption all day, however let's stay on topic with this one. One open source project I am working on is an open ledger system for tracking students and their meals and tracing it all the way to the suppliers of the meals across the country. To break it down, each meal will be packaged in easily transportable and cleanable containers and contain some kind of protein, rice, vege, and milk. A token system can be implemented to create a digital payment system for students, which allows easy tracking and management of meals and preventing 'double-spending'. A world-coin inspired proof-of-human mechanism can be implemented for easy consumer verification. Meal providers will earn token deposits for every digital signature signed when a student receives a meal. These tokens can be spent on meal provider suppliers, in which at the end of the supply chain tokens can be redeemed from a verified token exchange. Government budgets allocated for such redemptions can have more transparency with how the budget is spent and be traced all the way down to the students. This project is a work-in-progress.",
       "image": "/images/project2.png",
       "date": "Jan 2025",
       "collaborators": ["Jay Lee"],
@@ -32,12 +32,12 @@
         {
           "type": "image",
           "url": "/images/project2-detail1.png",
-          "description": "Real-time transactions overview."
+          "description": "Initial rollout of student lunch program"
         },
         {
           "type": "image",
           "url": "/images/project2-detail2.png",
-          "description": "Crypto wallet integration."
+          "description": "Students can use these simple PoS kiosks to confirm their meal tickets by scanning their face or card (similar to worldcoin's ORB)"
         }
       ]
     },
@@ -118,14 +118,19 @@
       "title": "VRET - AI Powered Telehealth Virtual Reality Exposure Therapy",
       "subtitle": "A smart home system controlled via AI",
       "description": "Integrated AI-powered smart home automation to manage lighting, security, and appliances.",
-      "image": "/images/project1.jpg",
+      "image": "/images/project6.png",
       "date": "Aug 2023",
       "collaborators": ["Manh Nguyen"],
       "sponsors": "US Veterans Affairs (Cincinnati), MUCAT & Game Lab",
       "media": [
         {
           "type": "image",
-          "url": "/images/project1-detail1.png",
+          "url": "/images/project6-detail1.png",
+          "description": "IoT home control dashboard."
+        },
+        {
+          "type": "image",
+          "url": "/images/project6-detail2.png",
           "description": "IoT home control dashboard."
         }
       ]
