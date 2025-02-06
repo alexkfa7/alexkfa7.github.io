@@ -1,100 +1,131 @@
 [
     {
-      "title": "Qualcomm - AI Emotion Recognition Through Audio & Video",
-      "subtitle": "Using non-traditional computer vision analysis of voice recordings to identify emotion in video",
-      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using a combination of audio and video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data. The audio data however was quite consistent, so I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. I've done a lot of crazy things in my life, but despite this being only a small side project it was one of my most proudest achievements. Btw, all of the data was in Korean when I didn't speak Korean at the time hehe.",
+      "title": "QUALCOMM - AI Emotion Recognition Through Audio & Video",
+      "subtitle": "Using computer vision analysis of voice recordings to identify emotion in video",
+      "description": "When I was doing research at KAIST, I was invited by Qualcomm to participate in a 2 month long hackathon-like challenge where we had to identify a perceived emotion from users by using the video files provided. Most of the teams were PhD groups who had access to the Samsung/Hyundai sponsored super computer clusters worth millions of dollars. However, my team and I were still able to beat them with our top performing model which ran solely on my $2000 MSI gaming laptop. After trialing out with various image techniques on the video, I discovered a lot of the users had different ways and levels in displaying emotions which led me to believe there was simply too much noise in the video data and I simply did not have the time nor compute to handle the large discrepencies. The audio data however was quite consistent and much less computationally taxing. After a few attempts of using the raw audio data, I implemented a computer vision algorithm to detect discrepencies in the audio data visualizations. The basic idea was to generate DFT normalized spectograms on smaller plots of an audio file to extract their features. I saw the budget for some of the other teams, and during the award ceremony everyone was so shocked that I could run the live-demo locally on my laptop haha. Looking back, I think one advantage I may have had was that I couldn't speak or understand Korean at the time which may have helped in being unbiased to the perceived emotions.",
       "image": "/images/project1.jpg",
       "date": "Dec 2019",
       "collaborators": ["Daehyeon Nam", "Mina Kim"],
+      "sponsors": "Qualcomm, Inc",
       "media": [
         {
           "type": "image",
           "url": "/images/project1-detail1.png",
-          "description": "An example image generated after performing normalization functions of the audio data when visualized into an image"
+          "description": "An example spectogram generated after performing normalization functions of the audio data when visualized into image form"
         },
         {
           "type": "image",
-          "url": "/images/project1-detail.jpg",
-          "description": "Dtest test test"
+          "url": "/images/project1-detail2.png",
+          "description": "Example webcam video frame sampled from the video data set"
         }
       ]
     },
     {
-      "title": "Crypto Payment System",
-      "subtitle": "A seamless and fast crypto-based payment gateway",
-      "description": "A revolutionary cryptocurrency payment gateway that allows users to seamlessly transact across different blockchain networks.",
-      "image": "/images/project2.jpg",
-      "date": "Dec 2023",
-      "collaborators": ["Alice Johnson"],
+      "title": "Crypto Free Lunch Program - Digital Ledger Service for Eliminating Corruption in Indonesia's proposed 'Free Lunch Program'",
+      "subtitle": "Indonesia is one of the most corrupt countries, with many notable mentions from the ICIJ",
+      "description": "A revolutionary cryptocurrency payment gateway that allows users to seamlessly verify and account for supply chain and purchase.",
+      "image": "/images/project2.png",
+      "date": "Jan 2025",
+      "collaborators": ["Jay Lee"],
+      "sponsors": "A.K.",
       "media": [
         {
           "type": "image",
-          "url": "/images/project2-detail1.jpg",
+          "url": "/images/project2-detail1.png",
           "description": "Real-time transactions overview."
         },
         {
           "type": "image",
-          "url": "/images/project2-detail2.jpg",
+          "url": "/images/project2-detail2.png",
           "description": "Crypto wallet integration."
         }
       ]
     },
     {
-      "title": "VR Education Platform",
-      "subtitle": "A new way to learn using virtual reality",
-      "description": "We built an interactive VR learning experience tailored for remote students.",
-      "image": "/images/project3.jpg",
-      "date": "Nov 2023",
-      "collaborators": ["Emily Brown"],
+      "title": "PROJECT VCR - SDKs for low-compute VR devices in 2019",
+      "subtitle": "Various SDKs for improving low-compute VR devices - streaming and VR processing",
+      "description": "In early 2019, VR technologies and their interactions were still quite limited making it a niche technology. At the time, the basic setup required at the time included a bulky computer worth thousands of dollars, several IR sensors, the head-mounted device, and two controllers for hand movement and interaction in the virtually rendered environment. After witnessing latest technological breakthroughs in 5G and wifi 6 while participating in the NMSL lab in KAIST, I believed there would be an era of extreme high-bandwidth communication ecosystems meaning low-compute devices could suddenly become so powerful as long as they had a sustainable network pathway. This led to a deep conviction that because of these upgrades in technology, there would be an analogous moment to VR/AR tech as there was with the breakthroughs in AI due to advents in GPU based computing. My hypothesis was that edge-computing would shift from main function processing to focus on external network device communication processing. We wanted to make VR/AR technologies more accessible by building a mobile version of a VR headset. With the given technologies at the time, this would prove to be a long arduous journey which required several actionable objectives. One of the core objectives my partner Daehyeon and I created was to solve the low-compute device compatibility and thermal throttling. Visualizing virtually rendered environments was already a highly researched space, and HMDs were getting yearly improvements on various types of screens. We wanted to expand on human computer interactions in VR by having controllerless interactions using just our hands. We developed a pipeline to offload compute",
+      "image": "/images/project3.png",
+      "date": "Aug 2019",
+      "collaborators": ["Daehyeon Nam"],
+      "sponsors": "Han Sangmin",
       "media": [
         {
           "type": "image",
-          "url": "/images/project3-detail1.jpg",
-          "description": "VR learning module demo."
+          "url": "/images/project3-detail1.png",
+          "description": "Hand-recognition controller pipeline overview"
+        },
+        {
+          "type": "image",
+          "url": "/images/project3-detail2.png",
+          "description": "After only 1 month of our demo, Facebook released their own version of the low-compute hand-tracking."
         }
       ]
     },
     {
-      "title": "AI-Powered Music Generator",
-      "subtitle": "AI that composes and produces music",
+      "title": "Komodo Analytica - AI recursive feedback loop content generator",
+      "subtitle": "AI recursive feedback loop content generator",
       "description": "This AI model creates original compositions based on user input.",
-      "image": "/images/project4.jpg",
-      "date": "Oct 2023",
-      "collaborators": ["Michael Green", "Sarah Lee"],
+      "image": "/images/project4.png",
+      "date": "Aug 2024",
+      "collaborators": ["Jay Jin"],
+      "sponsors": "Sinar Mas Group",
       "media": [
         {
           "type": "image",
-          "url": "/images/project4-detail1.jpg",
-          "description": "AI music waveform analysis."
+          "url": "/images/project4-detail1.png",
+          "description": "..."
+        },
+        {
+          "type": "image",
+          "url": "/images/project4-detail2.png",
+          "description": "..."
+        },
+        {
+          "type": "image",
+          "url": "/images/project4-detail3.png",
+          "description": "Indonesia's Minister of Energy & Minerals' son is a client hoping to build social media presence: https://www.youtube.com/shorts/D4gP-xphn3Y"
         }
       ]
     },
     {
-      "title": "Automated Trading Bot",
-      "subtitle": "Crypto & stock trading bot",
-      "description": "Built an AI-driven trading bot for high-frequency trading on crypto markets.",
-      "image": "/images/project5.jpg",
-      "date": "Sept 2023",
-      "collaborators": ["James Miller"],
+      "title": "RAS - Implementing Emergency Response System Integrated with Smart Home Environment",
+      "subtitle": "Alzheimer's assisted living robot",
+      "description": "Built an AI-driven bot for Alzheimer's patients who required assisted living.",
+      "image": "/images/project5.png",
+      "date": "May 2018",
+      "collaborators": ["Glen Duncan"],
+      "sponsors": "NIS, NIH",
       "media": [
         {
           "type": "image",
-          "url": "/images/project5-detail1.jpg",
+          "url": "/images/project5-detail1.png",
+          "description": "Live trading session screenshot."
+        },
+        {
+          "type": "image",
+          "url": "/images/project5-detail2.png",
+          "description": "Live trading session screenshot."
+        },
+        {
+          "type": "image",
+          "url": "/images/project5-detail3.png",
           "description": "Live trading session screenshot."
         }
       ]
     },
     {
-      "title": "IoT Home Automation",
+      "title": "VRET - AI Powered Telehealth Virtual Reality Exposure Therapy",
       "subtitle": "A smart home system controlled via AI",
       "description": "Integrated AI-powered smart home automation to manage lighting, security, and appliances.",
-      "image": "/images/project6.jpg",
+      "image": "/images/project1.jpg",
       "date": "Aug 2023",
-      "collaborators": ["Sophia Turner"],
+      "collaborators": ["Manh Nguyen"],
+      "sponsors": "US Veterans Affairs (Cincinnati), MUCAT & Game Lab",
       "media": [
         {
           "type": "image",
-          "url": "/images/project1-detail.jpg",
+          "url": "/images/project1-detail1.png",
           "description": "IoT home control dashboard."
         }
       ]

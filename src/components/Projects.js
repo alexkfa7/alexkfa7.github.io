@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <div className="projects-wrapper">
       <h1>/DEV Projects</h1>
-      <p>Below is a collection of open-source and private projects I've worked on.</p>
+      <p>Below is a collection of some open-source and private projects I've worked on.</p>
 
       {projects.map((project, index) => (
         <div className={`project-card ${expandedCards[index] ? 'expanded-card' : ''}`} key={index}>
@@ -44,6 +44,7 @@ const Projects = () => {
               <div className="project-metadata">
                 <span className="project-date">{project.date}</span>
                 <p className="project-collaborators">Collaborators: {project.collaborators.join(', ')}</p>
+                <p className="project-sponsors">Special Thanks: {project.sponsors}</p>
               </div>
             </div>
 

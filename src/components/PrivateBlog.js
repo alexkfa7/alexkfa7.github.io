@@ -118,8 +118,14 @@ const PrivateBlog = () => {
         <NewsCarousel />
       </div>
       
-      <h2 style={{paddingTop: '30px'}}>Check out some of my essays:</h2>
-      <h3>**apologies, this section is currently being updated..**</h3>
+      <h1 style={{paddingTop: '30px'}}>Check out some of my essays:</h1>
+      <h3>**this section is currently being updated**</h3>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- zero to one, building the future, scaling from nothing --</h2>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- business in ASIA, take your shoes off at the door... --</h2>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- GROWTH^2 --</h2>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- dogecoin, filtering the noise --</h2>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- yes, we are living in a simulation. --</h2>
+      <h2 style={{paddingTop: '30px',   color: '#39FF14'}}>-- shower thoughts --</h2>
     </div>
   );
 };
