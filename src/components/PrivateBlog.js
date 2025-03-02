@@ -102,7 +102,7 @@ const PrivateBlog = () => {
 
       <h2 style={{paddingTop: '40px'}}>Follow me on social media:</h2>
       <SocialContainer>
-        <SocialLink href="https://twitter.com/yes_chef___" target="_blank">
+        <SocialLink href="https://twitter.com/asimkemas" target="_blank">
           <FaXTwitter />
         </SocialLink>
         <SocialLink href="https://instagram.com/asim_ssi" target="_blank">
