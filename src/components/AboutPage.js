@@ -85,7 +85,7 @@ const AboutPage = () => {
 
       <p style={{ paddingBottom: '40px' }}>
         <br></br><br></br>
-        I am an indie hacker, builder, and 2x founder from the US with an interest in developing AI, crypto, and robotic applications. I spent the last 6+ years in Korea, Indonesia, and Vietnam focusing on various ventures which helped me develop strong domain expertise in building products and scaling their growth throughout East and Southeast Asia.
+        I am an indie hacker, builder, and 2x founder from the US with an interest in AI, crypto, and robotic applications. I spent the last 6+ years in Korea, Indonesia, and Vietnam focusing on various ventures which helped me develop strong domain expertise in building products and scaling their growth throughout East and Southeast Asia.
         My travels in Asia have given me a truly diverse range of experiences including working alongside high ranking government officials, military leaders, and other influential business magnates.
         <br></br><br></br>
         Rewind to 2018, my first venture began prior to my move to Asia. I was studying computer science with a focus on AI, robotics, and augmented/virtual reality. I joined a group of friends, who I met volunteering over the summer, to build eFuse - the first 'linkedin for esports'. This company ended up raising more than $16m in capital, earning $38m ARR at its peak, and expanding to a team of 100+ members in the local Columbus office.
