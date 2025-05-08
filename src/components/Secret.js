@@ -9,7 +9,7 @@ const ThankYouWrapper = styled.div`
 const SecretPage = () => (
   <ThankYouWrapper>
     <h1>Secret</h1>
-    <p>Thank you for checking out my blog. This page is currently under construction. The new blog will be posted on 25/03/19. Essays will be updated 25/03/12.</p>
+    <p>Thank you for checking out my blog. This page is currently under construction. The new blog will be posted on 25/10/19. Essays will be updated 25/05/19.</p>
   </ThankYouWrapper>
 );
 

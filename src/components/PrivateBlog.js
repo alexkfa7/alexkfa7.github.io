@@ -80,7 +80,7 @@ const PrivateBlog = () => {
   return (
     <div style={{ padding: '30px' }}>
       <h1>/Private Blog & Essays</h1>
-      <p>Access to my my private blog is limited to referred persons only. You can request access by sending me a message, or you can check out my essays below or my public blog written under the pesudonym: <a
+      <p>Access to my my private blog is limited to referred persons only. You can request access by sending me a message, or you can check out my essays below or my public blog written under my pen name: <a
       href="https://medium.com/@karlasimov"
       style={{
         color: '#39FF14', /* Your desired color */

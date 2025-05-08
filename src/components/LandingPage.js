@@ -130,7 +130,7 @@ const LandingPage = () => {
         {displayedText}
         <Cursor style={{ opacity: showCursor ? 1 : 0 }} />
       </Title>
-      <Subtitle>Alex Kemas's personal website</Subtitle>
+      <Subtitle>Asim Kemas's personal website</Subtitle>
       <ButtonContainer>
         <CTAButton to="/about">About A.K.</CTAButton>
         <CTAButton to="/contact">Send Me A Message</CTAButton>

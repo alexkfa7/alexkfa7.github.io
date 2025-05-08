@@ -2,7 +2,7 @@
     {
       "title": "QUALCOMM - AI Emotion Recognition Through Audio & Video",
       "subtitle": "Using computer vision and audio analysis to identify emotions in video",
-      "description": "During my research at KAIST, I was invited by Qualcomm to participate in an intensive two-month challenge focused on identifying perceived emotions in users based on video recordings. Most competing teams consisted of PhD researchers with access to multimillion-dollar supercomputing clusters sponsored by Samsung and Hyundai. Meanwhile, my team and I relied solely on my $2,000 MSI gaming laptop. Against all odds, we outperformed them. Initially, we explored various image processing techniques to analyze facial expressions in video data. However, I quickly realized that emotional expressions varied significantly across individuals, introducing excessive noise into the dataset. With limited compute resources and time, I pivoted to audio-based emotion recognition, which exhibited greater consistency and was computationally less demanding. Rather than relying solely on raw waveform analysis, I implemented a computer vision algorithm to detect discrepancies in audio spectrograms. By generating DFT-normalized spectrograms on segmented portions of the audio files, we extracted meaningful features indicative of emotional states. At the award ceremony, the sheer disbelief from other teams—realizing that our model ran locally on a gaming laptop—was priceless. In hindsight, one unintended advantage might have been that I didn’t speak or understand Korean at the time, making my analysis less biased toward perceived emotional interpretations.",
+      "description": "At KAIST, I was invited by Qualcomm to compete in an AI challenge focused on emotion detection from user-recorded videos. Most teams had access to multimillion-dollar compute clusters; we had my MSI gaming laptop. Early on, I realized facial expressions introduced too much variance for reliable inference across populations. Instead, I pivoted to audio. By generating spectrograms from speech segments and analyzing them with computer vision, I found patterns in emotional cadence that generalized better. The approach was fast, lightweight, and surprisingly effective—enough to outperform teams with vastly more resources. Ironically, not speaking Korean at the time probably helped. I couldn’t anchor to linguistic content, so I trusted the signals.", 
       "image": "/images/project1.jpg",
       "date": "Dec 2019",
       "collaborators": ["Daehyeon Nam", "Mina Kim"],
@@ -23,7 +23,7 @@
     {
       "title": "Crypto Free Lunch Program - A Digital Ledger for Corruption-Free Meal Distribution in Indonesia",
       "subtitle": "Leveraging blockchain to ensure transparency in Indonesia’s proposed Free Lunch Program",
-      "description": "As part of their presidential campaign, Acting President Prabowo Subianto and Vice President Gibran Rakabuming pledged a nationwide free lunch program to ensure that no student goes hungry. While the initiative has begun rolling out, corruption remains a persistent problem—especially in large-scale government programs. Rather than lamenting Indonesia’s long history of budget mismanagement, I thought it would be fun to build a solution that would hopefully help. My open-source project aims to build a fully transparent, traceable ledger system to track student meal distribution from suppliers to recipients. The core idea is simple: 1. Each meal is standardized and packaged in transportable, reusable containers. 2. A tokenized digital payment system prevents fraud and “double-spending.” 3. A proof-of-humanity mechanism, inspired by Worldcoin, ensures students are uniquely verified. 4. Meal providers earn token deposits upon a student’s verified meal receipt, which can be redeemed at supplier-level exchanges. 5. Government budgets allocated for the program are fully transparent, allowing public accountability for every transaction. This is a work in progress, but the goal is clear: a corruption-resistant system that ensures funding reaches the students, not the pockets of middlemen.",
+      "description": "When Indonesia announced its national free lunch program, I saw the core failure point immediately: transparency. The real problem isn’t logistics—it’s trust. I toyed around with a prototype of a blockchain-based tracking system for government-funded meals. Each meal is tokenized, verified using proof-of-humanity-style ID (inspired by Worldcoin), and tracked from distribution to consumption. Providers are only reimbursed after confirmed delivery, and all budgets are auditable on-chain. The entire stack is built to eliminate middleman leakage and enforce public accountability without relying on third-party trust. It’s a digital control layer for welfare logistics, designed for real-world edge cases like Indonesia’s. (This project never came to light, but open to share code for anyone interested)",
       "image": "/images/project2.png",
       "date": "Jan 2025",
       "collaborators": ["Jay Lee"],
@@ -32,19 +32,19 @@
         {
           "type": "image",
           "url": "/images/project2-detail1.png",
-          "description": "Initial rollout of student lunch program"
+          "description": "Initial rollout of student lunch program (not original image)"
         },
         {
           "type": "image",
           "url": "/images/project2-detail2.png",
-          "description": "Students can use these simple PoS kiosks to confirm their meal tickets by scanning their face or card (similar to worldcoin's ORB)"
+          "description": "Students can use these simple PoS kiosks to confirm their meal tickets by scanning their face or card (similar to worldcoin's ORB) (not original image)"
         }
       ]
     },
     {
       "title": "PROJECT VCR - SDKs for Low-Compute VR Devices (2019)",
       "subtitle": "Innovating VR streaming and interaction for mobile-first devices",
-      "description": "Back in 2019, consumer VR was still an expensive, hardware-intensive niche, requiring thousands of dollars in equipment—bulky PCs, multiple IR sensors, a head-mounted display, and controllers for interaction. Recognizing the potential of emerging 5G and Wi-Fi 6 networks, I saw an opportunity: what if we could offload the compute-heavy processing to the cloud and use low-power devices to stream high-quality VR experiences? At KAIST’s NMSL lab, my research partner Daehyeon Nam and I developed a pipeline inspired by NVIDIA’s future game streaming technologies, such as GeForce NOW. As an NVIDIA member for years, I had pre-release developer access to their alpha program, where I gained early insight into their cloud-based rendering architectures—well before their official release nearly a year and a half later. This firsthand knowledge helped shape our compute offloading pipeline, which tackled two critical bottlenecks: 1. Rendering Virtual Environments – Instead of relying on local device GPUs, we offloaded rendering to local edge servers over Wi-Fi 6, enabling near-PC performance on mobile processors. 2. Controller-Free Interaction – We optimized hand-tracking interactions without relying on dedicated VR controllers, significantly improving accessibility for lightweight devices. Despite slight latency issues (since refined hand-tracking models were still in development), our system delivered near-PC performance on mobile VR headsets, a breakthrough at the time. Ironically, just one month after our prototype demo, Facebook (now Meta) launched its own low-compute hand-tracking solution—validating our early hypothesis that network-driven VR would be the future.",
+      "description": "Komodo Analytica is an AI-native feedback loop for automated brand growth. It models audiences based on psychographics and region, generates trend-aware short-form content, and refines strategy using real-time engagement data. The system continuously iterates across platforms, minimizing the gap between insight and execution. It's been used by political campaigns and public figures to scale messaging without needing large media teams. Unlike most 'personal branding tools,' it doesn’t just schedule—it learns, adapts, and improves autonomously. It treats content like code: versioned, tested, and optimized for performance.",
       "image": "/images/project3.png",
       "date": "Aug 2019",
       "collaborators": ["Daehyeon Nam"],
@@ -65,7 +65,7 @@
     {
       "title": "Komodo Analytica - AI-Driven Personal Branding Automation",
       "subtitle": "A recursive AI feedback loop for optimizing social media growth",
-      "description": "Komodo Analytica is a fully automated AI-driven personal branding service designed to optimize social media growth and engagement. It operates as a self-sustaining content-generation engine, leveraging: Audience hypothesis modeling – Identifies target demographics based on region, interests, and engagement patterns. Automated content generation – AI creates high-performing short-form content based on real-time trends. Iterative performance analysis – AI collects feedback from engagement metrics and refines content strategy. This system allows clients—particularly politicians, public figures, and influencers—to expand their reach while focusing on real-world engagement. Instead of spending hours filming content, users let Komodo AI generate, test, and optimize their messaging. Notably, several political campaigns have already adopted Komodo Analytica, significantly shortening the feedback loop for community engagement and maximizing voter outreach.",
+      "description": "Komodo Analytica is an AI-native feedback loop for automated brand growth. It models audiences based on psychographics and region, generates trend-aware short-form content, and refines strategy using real-time engagement data. The system continuously iterates across platforms, minimizing the gap between insight and execution. It's been used by political campaigns and public figures to scale messaging without needing large media teams. Unlike most 'personal branding tools,' it doesn’t just schedule—it learns, adapts, and improves autonomously. It treats content like code: versioned, tested, and optimized for performance. (K.A is now continued under a different brand and group of engineers)",
       "image": "/images/project4.png",
       "date": "Aug 2024",
       "collaborators": ["Jay Jin"],
@@ -84,54 +84,75 @@
         {
           "type": "image",
           "url": "/images/project4-detail3.png",
-          "description": "Many politicians' family members inspire their children to pursue politics including Indonesia's Minister of Energy & Minerals' son: https://www.youtube.com/shorts/D4gP-xphn3Y"
+          "description": " Clients include Indonesia's Minister of Energy & Minerals' son: https://www.youtube.com/shorts/D4gP-xphn3Y"
         }
       ]
     },
     {
       "title": "RAS - AI-Powered Assisted Living for Alzheimer’s Patients",
       "subtitle": "An emergency response and behavioral monitoring system for smart homes",
-      "description": "RAS (Responsive Autonomous System) is an AI-driven bot designed for Alzheimer’s patients requiring assisted living. The primary challenge was ensuring adaptability across varied home environments. Our solution incorporated: 1. LiDAR-based SLAM mapping for real-time spatial awareness. 2. Behavioral monitoring to identify deviations from normal routines (e.g., missing medications). 3. Emotion-aware emergency response – The system analyzed speech sentiment and vocal intonation to assess urgency levels. If critical, it automatically alerted emergency services and directed caregivers to the patient’s location with maximum efficiency. This project represented a step toward contextually intelligent home robotics, blending AI-driven safety with compassionate, human-centric care.",
+      "description": "RAS is a home-based AI system designed to monitor behavioral drift in Alzheimer’s patients. Built on a LiDAR-enabled SLAM engine for dynamic spatial mapping, it tracks patient routines and flags anomalies—like missed medication or unusual movement. The system also includes an audio sentiment analysis layer that assesses vocal urgency, triaging emotional signals to trigger emergency response protocols. The goal was not to over-automate, but to build context-aware, lightweight robotics that can act quickly when things go wrong. RAS blends situational awareness with human-first design, extending safety without compromising autonomy.",
       "image": "/images/project5.png",
-      "date": "May 2018",
+      "date": "May 2019",
       "collaborators": ["Glen Duncan"],
       "sponsors": "NIS, NIH",
       "media": [
         {
           "type": "image",
           "url": "/images/project5-detail1.png",
-          "description": "..."
+          "description": "Alzheimer's patients who are disabled can trigger emergency response by emotion analysis (not original image)"
         },
         {
           "type": "image",
           "url": "/images/project5-detail2.png",
-          "description": "Building out mapping system around our lab"
+          "description": "SLAM mapping system for real-time spatial awareness (testing around our lab)"
         },
         {
           "type": "image",
           "url": "/images/project5-detail3.png",
-          "description": "V1 bot using turtle movement system and handling basic user commands"
+          "description": "V1 bot used turtlebot3 base for movement (V1 bot)"
         }
       ]
     },
     {
       "title": "VRET - AI-Powered Virtual Reality Exposure Therapy",
       "subtitle": "Telehealth solutions for veterans suffering from combat PTSD",
-      "description": "Exposure Therapy (ET) is one of the most effective treatments for PTSD, gradually desensitizing patients to traumatic triggers. However, traditional in-person therapy remains inaccessible for many veterans due to stigma, logistical challenges, or personal guilt about 'taking someone else’s place' in treatment. Virtual Reality Exposure Therapy (VRET) offers a solution. Our project created AI-controlled VR therapy environments that simulated combat-related triggers under therapist guidance. Key innovations included: 1. Adaptive biofeedback monitoring – The system paused or adjusted scenes based on real-time physiological responses (heart rate, stress levels). 2. Remote therapy integration – Veterans and therapists could connect virtually, removing geographical barriers to treatment. 3. Dynamic trigger exposure – Scenes adapted based on individual responses, optimizing the desensitization process. Our research demonstrated that repeated VRET sessions significantly reduced PTSD-related fight-or-flight responses, providing a scalable telehealth alternative to traditional therapy.",
+      "description": "Exposure therapy is one of the most effective treatments for PTSD—but for many veterans, accessing it is logistically or emotionally difficult. I built a virtual reality-based therapy platform that simulates adaptive combat triggers and adjusts in real-time based on biofeedback signals like heart rate and stress levels. Patients can connect remotely with therapists, and the platform adjusts exposure intensity as needed, enabling personalized desensitization at scale. Our pilot studies showed reduced physiological fight-or-flight responses over repeated sessions, validating VR as a viable path to democratizing trauma care.",
       "image": "/images/project6.png",
-      "date": "Aug 2023",
+      "date": "April 2019",
       "collaborators": ["Manh Nguyen"],
       "sponsors": "US Veterans Affairs (Cincinnati), MUCAT & Game Lab",
       "media": [
         {
           "type": "image",
           "url": "/images/project6-detail1.png",
-          "description": "We implemented a less extreme version of fear & trauma by using a horror scene demo where we tracked user's heart rate and stress levels in the virtual environement and tried to use VRET to decrease their body's response"
+          "description": "To stimulate a less extreme fear & trauma response, we simulated a horror experience where we tracked user's heart rate and stress levels in the virtual environement and tried to use VRET to decrease their body's response (not original image)"
         },
         {
           "type": "image",
           "url": "/images/project6-detail2.png",
-          "description": "example bio monitoring during a virtual reality session"
+          "description": "We monitored user's heart rate and stress levels in the virtual environement and tried to use VRET to decrease their body's response (not original image)"
+        }
+      ]
+    },
+    {
+      "title": "Fanesthesia - Pre-operative Stress Reduction for Adolescent Patients",
+      "subtitle": "Mobile app for pre-operative stress reduction for adolescent patients",
+      "description": "Fanesthesia is a pre-operative cognitive prep tool designed for adolescent patients undergoing surgery. Traditional hospital protocols do little to address pre-op anxiety, which can increase risk factors and recovery time. Fanesthesia delivers structured mindfulness and cognitive-behavioral exercises in a game-like mobile experience, tailored to reduce cortisol levels and improve surgical readiness. We worked with anesthesiologists to track patient engagement and recovery outcomes. The app was designed to be medically grounded, modular, and usable in both clinical and outpatient settings. It's a lightweight intervention with measurable impact—especially in pediatric contexts.",
+      "image": "/images/project7.png",
+      "date": "Feb 2018",
+      "collaborators": ["Michael Stahr, Sean P. Antosh, MD"],
+      "sponsors": "Dayton Children's Hospital",
+      "media": [
+        {
+          "type": "image",
+          "url": "/images/project7-detail1.png",
+          "description": "Anesthesiologists can easily monitor their patients' progress (not original image)"
+        },
+        {
+          "type": "image",
+          "url": "/images/project7-detail2.png",
+          "description": "Children are prompted through interactive games to complete their mindfulness exercises (not original image)"
         }
       ]
     }
