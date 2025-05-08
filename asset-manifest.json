@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.957691c5.css",
-    "main.js": "/static/js/main.7c352b97.js",
+    "main.js": "/static/js/main.b37cc54e.js",
     "static/media/pic1.png": "/static/media/pic1.3e30ca885bb4cd5349dd.png",
     "static/media/koail_logo_white.png": "/static/media/koail_logo_white.271ef8b33699e68f0957.png",
     "static/media/vcr_font.ttf": "/static/media/vcr_font.10cf96d54dcd9af0486c.ttf",
@@ -11,10 +11,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.957691c5.css.map": "/static/css/main.957691c5.css.map",
-    "main.7c352b97.js.map": "/static/js/main.7c352b97.js.map"
+    "main.b37cc54e.js.map": "/static/js/main.b37cc54e.js.map"
   },
   "entrypoints": [
     "static/css/main.957691c5.css",
-    "static/js/main.7c352b97.js"
+    "static/js/main.b37cc54e.js"
   ]
 }
