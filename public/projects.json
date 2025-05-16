@@ -44,7 +44,7 @@
     {
       "title": "PROJECT VCR - SDKs for Low-Compute VR Devices (2019)",
       "subtitle": "Innovating VR streaming and interaction for mobile-first devices",
-      "description": "Komodo Analytica is an AI-native feedback loop for automated brand growth. It models audiences based on psychographics and region, generates trend-aware short-form content, and refines strategy using real-time engagement data. The system continuously iterates across platforms, minimizing the gap between insight and execution. It's been used by political campaigns and public figures to scale messaging without needing large media teams. Unlike most 'personal branding tools,' it doesn’t just schedule—it learns, adapts, and improves autonomously. It treats content like code: versioned, tested, and optimized for performance.",
+      "description": "In 2019, most consumer VR still relied on dedicated hardware: PC GPUs, external sensors, and proprietary controllers. At KAIST, we explored how the shift toward Wi-Fi 6 and edge computing could reduce this dependency. The goal was to make high-quality VR more accessible by streaming environments from local servers and enabling interaction through lightweight, on-device tracking. Working with early NVIDIA cloud rendering tools, we built a system that offloaded scene rendering to edge nodes while using onboard vision models for controller-free hand tracking. The prototype ran on mobile chipsets and required no external hardware. While latency remained a challenge, the pipeline demonstrated that near-PC VR experiences could run on low-power devices—months before similar capabilities were announced by Meta.",
       "image": "/images/project3.png",
       "date": "Aug 2019",
       "collaborators": ["Daehyeon Nam"],
